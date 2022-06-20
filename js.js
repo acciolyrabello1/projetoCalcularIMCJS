@@ -1,10 +1,10 @@
-var peso = 
+var peso = document.getElementById('peso');
+var altura = document.getElementById('altura');
+var exibir = document.getElementById('exibir');
+
 function calcular(){
-
-const inputPeso = document.querySelector(peso).value;
-const inputAltura = document.querySelector(altura).value;
-const imcTotal = (inputPeso / (inputAltura * inputAltura)).toFixed(2);
-
-resultado.innerHTML = <p> Seu IMC é de: <strong> ${imcTotal} </strong></p>
+console.log("joao");
+var imc = peso.value / (altura.value*altura.value);
+exibir.innerHTML = imc;
 
 }
