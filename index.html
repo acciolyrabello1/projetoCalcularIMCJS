@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>IMC</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <a class="navbar-brand" href="#">Hello World</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home<span class="sr-only">(Página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="faleconosco.html">Fale Conosco</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"> Quem somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"> Serviços ofertados</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Faça sua doação
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="pix.html">Pix ou QR Code</a>
+          <a class="dropdown-item" href="docted.html">Dados Bancários (DOC ou TED)</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="presencial.html">Presencialmente</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Calculadora de IMC</h1>
+    <p class="lead">O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal</p>
+  </div>
+</div>
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+    <h5>Peso</h5>
+    <input type="number" size="50" id="peso"><br><br>
+    <h5>Altura</h5>
+    <input type="number" size="50" id="altura"><br><br>
+
+    
+    <button type="button" class="bt2 btn btn-primary" onclick="calcular()" >Calcular IMC</button>
+    <br><br><br>
+  </div>
+  <div class="col">
+    <h1> Seu IMC é:<span id="imc"></span></h1>
+    <div class="resultado"></div>
+  </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Classificação</th>
+          <th scope="col">IMC</th>
+          <th scope="col">Consequencias para a saúde</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Magreza</th>
+          <td>Menor que 18,5 kg/m²</td>
+          <td>Fadiga, ansiedade, stress</td>
+        </tr>
+        <tr>
+          <th scope="row">Peso Normal</th>
+          <td>18,5 a 24,9kg/m²</td>
+          <td>Menor risco de doenças cardiacas e vasculares</td>
+        </tr>
+        <tr>
+          <th scope="row">Sobrepeso</th>
+          <td>25 a 29,9kg/m²</td>
+          <td>Fadiga, má circulação e varizes</td>
+        </tr>
+        <tr>
+          <th scope="row">Obesidade Grau I</th>
+          <td>30 a 34,9kg/m²</td>
+          <td>Diabetes, angina, infarto, atrosclerose</td>
+        </tr>
+        <tr>
+          <th scope="row">Obesidade Grau II</th>
+          <td>35 a 40kg/m²</td>
+          <td>Apneia do sono, falta de ar</td>
+        </tr>
+      </tbody>
+    </table>
+   
+   
+
+
+
+<script src="js.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
